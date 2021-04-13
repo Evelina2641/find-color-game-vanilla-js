@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find A Color Game</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/0_resets.css">
+    <link rel="stylesheet" href="./styles/1_header.css">
+    <link rel="stylesheet" href="./styles/2_footer.css">
+    <link rel="stylesheet" href="./styles/main/0_index.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <nav class="conatiner">
+            <ul class="navigation">
+                <li class="navigation__item"><a href="./pages/first-level.html"><i class="far fa-star"></i> EASY</a></li>
+                <li class="navigation__item"><a href="./pages/second-level.html"><i class="fas fa-star-half-alt"></i> MEDIUM</a></li>
+                <li class="navigation__item"><a href="./pages/third-level.html"><i class="fas fa-star"></i> HARD</a></li>
+                <!-- <li><a href="./pages/scoreboard.html">Scoreboard</a></li> OPTIONAL-->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Match the main color with given ones</h1>
+        <div class="form">
+            <label for="name">Enter your name</label>
+            <input type="text" id="name">
+            <input type="submit" id="submit">
+        </div>
+        <div class="wrapper">
+        <div class="score">
+            <h3>SCOREBOARD</h3>
+            <div class="results">
+                <p class="for-name"></p>
+                <p class="first-level-result"></p>
+                <p class="second-level-result"></p>
+                <p class="third-level-result"></p>
+            </div>
+        </div>
+        <div class="levels">
+            <button class="first-level"><a href="./pages/first-level.html">FIRST LEVEL(EASY)</a></button>
+            <button class="second-level"><a href="./pages/second-level.html">SECOND LEVEL(MEDIUM)</a></button>
+            <button class="third-level"><a href="./pages/third-level.html">THIRD LEVEL(HARD)</a></button>
+        </div>
+    </div>
+        
+    </main>
+
+    <footer id="footer">
+        <!-- Footer Code -->
+    </footer>
+    <script src="./scripts/home-page.js"></script>
+</body>
+</html>

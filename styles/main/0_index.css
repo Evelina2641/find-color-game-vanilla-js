@@ -1,0 +1,149 @@
+:root {
+    /* color values */
+    --light-color: #fff;
+    --dark-color: #333;
+    /* font values */
+    --small-text: 1em;
+    --medium-text: 1.5em;
+    --large-text: 2em;
+    --xlarge-text: 2.5em;
+}
+
+h1 {
+    margin: 20px 25px;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--dark-color);
+    border-top: 2px solid var(--dark-color);
+}
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+label {
+    font-size: var(--small-text);
+    color: var(--dark-color);
+    font-weight: 700;
+    padding-right: 5px;
+    align-self: center;
+}
+input {
+    width: 120px;
+    height: 30px;
+}
+input[type='submit'] {
+    width: 70px;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 5px;
+}
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-color);
+}
+
+.score h3 {
+    font-weight: 900;
+    font-size: var(--medium-text);
+    margin-left: -30px;
+    color: red;
+}
+.results {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: 1px solid var(--dark-color);
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 25px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+.levels {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 100px;
+    /* align-items: center; */
+}
+button {
+    width: 220px;
+    height: 70px;
+    background-color: var(--dark-color);
+    border: none;
+    border-radius: 2px;
+}
+a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 1rem;
+}
+.first-level {
+    align-self: flex-start;
+}
+.second-level {
+    align-self: center;
+    margin-top: 10px;
+}
+.third-level {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+/* DESKTOP */ 
+
+@media screen and (min-width:1280px) {
+    .form {
+        margin-bottom: 0;
+    }
+    label {
+        font-size: var(--medium-text);
+        padding-right: 10px;
+    }
+    input {
+        align-self: center;
+    }
+    input[type='submit'] {
+        font-size: var(--medium-text);
+        width: 150px;
+        height: 40px;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .score {
+        width: 50%;
+    }
+    .levels {
+        width: 50%;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .results {
+        padding-bottom: 30px;
+    }
+    .results p {
+        padding: 15px;
+        font-size: var(--medium-text);
+    }
+    .score h3 {
+        font-size: var(--large-text);
+    }
+    button {
+        width: 420px;
+        height: 100px;
+    }
+    .first-level, .second-level, .third-level {
+        align-self: center
+    }
+    a {
+        font-size: var(--large-text);
+    }
+}
